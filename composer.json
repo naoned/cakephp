@@ -1,0 +1,11 @@
+{
+    "name": "naonedsystemes/cakephp",
+    "type": "library",
+    "description": "",
+    "homepage": "http://www.mnesys-portail.fr",
+    "license": "Unknown",
+    "require": {
+        "php": ">=5.3.3",
+    },
+}
+
