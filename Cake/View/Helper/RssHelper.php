@@ -19,7 +19,7 @@
  */
 
 App::uses('AppHelper', 'View/Helper');
-App::uses('Xml', 'Utility');
+App::uses('XmlCake', 'Utility');
 
 /**
  * RSS Helper class for easy output RSS structures.
@@ -335,7 +335,7 @@ class RssHelper extends AppHelper {
 			$content = '<![CDATA[' . $content . ']]>';
 		}
 		$xml .= '>' . $content . '</' . $name . '>';
-		$elem = Xml::build($xml, array('return' => 'domdocument'));
+		$elem = XmlCake::build($xml, array('return' => 'domdocument'));
 		$nodes = $elem->getElementsByTagName($bareName);
 		if ($attrib) {
 			foreach ($attrib as $key => $value) {
